@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 app.get('/send', (req, res) => {
 	if (send(req.query.name, req.query.message, req.query.color)) {
 		if (req.query.theme) {
-			res.redirect('/theme/' + req.query.theme;
+			res.redirect('/theme/' + req.query.theme);
 		}
 		else {
 			res.redirect('/');
