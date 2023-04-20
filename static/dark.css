@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+* {
+	font-family: 'Ubuntu', sans-serif;
+}
+body {
+	background-color: #272629;
+}
+div.maintext {
+	width: 75%;
+	left: 0;
+	word-wrap: break-word;
+	color: white;
+}
+
+
+.blue {
+	color: #b6bffc;
+}
+.green {
+	color: #8deb90;
+}
+.red {
+	color: #fa7070;
+}
+.purple {
+	color: #f08cff;
+}
+.aqua {
+	color: #34ebe5;
+}
+
+div.sidebar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 25%;
+	color: white;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: #333333;
+}
+form.sendform {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	font-family: 'Ubuntu', sans-serif;
+	-ms-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+}
+input[type=text], select {
+	background-color: #2a2a2b;
+	color: #ffffff;
+	border: 2px groove #777777;
+	border-radius: 4px;
+}
+input[type=submit] {
+	background-color: #149600;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	color: white;
+}
