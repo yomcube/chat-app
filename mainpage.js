@@ -1,9 +1,9 @@
 const fs = require('fs');
 const config = require('./config');
 exports = module.exports = function (req, res, theme) {
-	var sidebar = fs.readFileSync('sidebar.htm');
-	fs.readFile('htm.htm', (err, data) => {
-		if (err) throw err;
+	var sidebar = fs.readFileSync(config.sidebarFile);
+	fs.readFile(config.chatFile, (err, data) => {
+		if (err) console.log(err);
 		res.set('Content-Type', 'text/html');
 		res.write(`<!DOCTYPE html>
 <html>

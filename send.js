@@ -1,4 +1,5 @@
 const fs = require('fs');
+const config = require('./config');
 const sanitize = require('./sanitize');
 exports = module.exports = send;
 function send(name, message, color) {
@@ -6,7 +7,7 @@ function send(name, message, color) {
 	else if ((!name) || (name == "")) {return false;}
 	else if ((!message) || (message == "")) {return false;}
 	else {
-		fs.appendFile('htm.htm', `\t\t<span class="${color}">${sanitize(name)}:</span> ${sanitize(message)}<br />\n`, err => {if (err) throw err;});
+		fs.appendFile(config.chatFile, `\t\t<span class="${color}">${sanitize(name)}:</span> ${sanitize(message)}<br />\n`, err => {if (err) console.log(err);});
 		return true;
 	}
 }

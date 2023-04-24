@@ -1,14 +1,17 @@
 #!/usr/bin/env node
 /*************************************/
-const path         = require('path');
 const fs           = require('fs');
+const path         = require('path');
 /*************************************/
 const express      = require('express');
 const app          = express();
 /*************************************/
+const config       = require('./config');
 const mainpage     = require('./mainpage');
 const send         = require('./send');
-const config       = require('./config');
+const setup        = require('./setup');
+
+setup.createFiles();
 
 app.use(
 	express.urlencoded({

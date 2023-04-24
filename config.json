@@ -1,5 +1,7 @@
 {
 	"defaultTheme": "light",
+	"chatFile": "chat.htm",
+	"sidebarFile": "sidebar.htm",
 	"url": "//localhost",
 	"port": "8000"
 }
